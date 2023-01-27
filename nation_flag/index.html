@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Flag</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        place-items: center;
+        display: grid;
+       
+
+    }
+
+    .flag{
+        display: grid;
+        place-items: center;
+        width: 17rem;
+        height: 12rem;
+        background:whitesmoke;
+        position: relative;
+        box-shadow: 0 0 5rem rgba(0,0, 0, 0.3);
+    }
+
+    .flag::before, .flag::after{
+        content: "";
+        width: 100%;
+        height: 33.3%;
+        position: absolute;
+    }
+
+    .flag::before{
+        background-color:#ff9933 ;
+        top: 0;
+    }
+.flag::after{
+    background-color: #009648;
+    bottom: 0;
+}
+
+.ashoka_chakra{
+    background: url(./ashoka.jpg);
+    width: 4rem;
+    position: relative;
+    height: 4rem;
+    background-size: cover;
+    animation: circle 5s linear infinite;
+    border-radius: 2rem;
+}
+
+@keyframes circle {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="flag">
+            <div class="ashoka_chakra">
+
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
